@@ -49,7 +49,6 @@ else:
     else:
         start_date = end_date = date_range[0]
 
-    # Обновленная маска без привязки к Источнику
     mask = (df_all['Дата'].dt.date >= start_date) & (df_all['Дата'].dt.date <= end_date)
     filtered_df = df_all.loc[mask]
 
